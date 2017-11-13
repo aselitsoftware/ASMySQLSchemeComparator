@@ -10,14 +10,14 @@
     	<jar destfile="${destFile}">
             <manifest>
             	<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
-                <attribute name="Rsrc-Main-Class" value="ru.aselit.AppRun"/>
+                <attribute name="Rsrc-Main-Class" value="com.aselitsoftware.AppRun"/>
             	<attribute name="Rsrc-Class-Path" value="./ lib/log4j-api-2.7.jar lib/log4j-core-2.7.jar lib/mysql-connector-java-5.1.35-bin.jar lib/ASGeneralFiles.jar lib/ASDatabaseConnection.jar"/>
             	<attribute name="Implementation-Version" value="1.0"/>
             </manifest>
             <zipfileset src="../jar-in-jar-loader.zip"/>
             <fileset dir="bin" includes="**/*.class" />
     		<fileset dir="bin" includes="log4j2.xml" />
-    		<zipfileset dir="images" includes="ok_16x16.png" prefix="ru/aselit" />
+    		<zipfileset dir="images" includes="ok_16x16.png" prefix="com/aselitsoftware" />
     		
     		<zipfileset dir="C:\Program Files\MySQL\MySQL Connector J" includes="mysql-connector-java-5.1.35-bin.jar" prefix="lib" />
         	<zipfileset dir="..\apache-log4j-2.7-bin" includes="log4j-api-2.7.jar" prefix="lib" />
